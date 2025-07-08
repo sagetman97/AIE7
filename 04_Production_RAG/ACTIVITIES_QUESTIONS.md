@@ -31,6 +31,15 @@ Answer: To robustly handle edge cases in a LangGraph-based RAG system, you can e
 
 
 LANGSMITH:
+
+
+#### 🏗️ Activity #1:
+
+Include a screenshot of your trace and explain what it means.
+
+https://drive.google.com/file/d/13KYU8LKoY5cURTmhFakw5840zq7xuLAY/view?usp=sharing
+
+
 #### ❓Question #1:
 
 What conclusions can you draw about the above results?
