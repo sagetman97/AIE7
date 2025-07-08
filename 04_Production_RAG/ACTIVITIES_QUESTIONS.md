@@ -1,3 +1,18 @@
+
+ASSINGMENT INTRODUCTION FILE:
+
+##### 🏗️ Activity #1:
+
+While there's nothing specifically wrong with the chunking method used above - it is a naive approach that is not sensitive to specific data formats.
+
+Brainstorm some ideas that would split large single documents into smaller documents.
+
+ANSWER:
+1. Increase chunk overlap
+2. Split at semantic or structural boundaries (e.g., headings, sections, paragraphs)
+3. Use sentence or paragraph-based chunking, grouping them to fit the chunk size
+
+
 ##### ❓ Question #1:
 What is the embedding dimension, given that we're using `text-embedding-3-small`?
 You will need to fill the next cell out correctly with your embedding dimension for the rest of the notebook to run.
