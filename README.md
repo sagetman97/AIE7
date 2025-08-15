@@ -46,10 +46,13 @@ After that, you can follow from Step 2. below!
    ```
 
 2. **Configure environment variables**:
-Copy the `.env.sample` to `.env` and add your Tavily API key:
+Create a `.env` file and add your API keys:
    ```
-   TAVILY_API_KEY=your_api_key_here
+   TAVILY_API_KEY=your_tavily_api_key_here
+   OPENWEATHER_API_KEY=your_openweather_api_key_here
    ```
+   
+   **Note**: For the weather functionality, you'll need a free API key from [WeatherAPI.com](https://www.weatherapi.com/). Sign up and get your API key there.
 
 3. 🏗️ **Add a new tool to your MCP Server** 🏗️
 
@@ -76,7 +79,16 @@ The server will start and listen for commands via standard input/output.
 
 ## Usage
 
-The server provides a `web_search` tool that can be used to search the web for information about a given query. This is achieved by calling the `web_search` function with the desired query string.
+The server provides several tools:
+
+- **`web_search`**: Search the web for information about a given query using the Tavily API
+- **`roll_dice`**: Roll dice with custom notation (e.g., "2d20" for two 20-sided dice)
+- **`get_weather`**: Get current weather information for a specific city using the OpenWeatherMap API
+
+### Weather Tool Example
+The weather tool accepts a city name and optional country code (defaults to "US"):
+- City: Any city name (e.g., "New York", "London", "Tokyo")
+- Country Code: ISO country code (e.g., "US", "GB", "JP")
 
 ## License
 
